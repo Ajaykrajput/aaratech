@@ -14,10 +14,14 @@ const BlogSection = () => {
         <div className="flex items-center py-4 md:w-1/2 w-full px-4 md:px-0">
           <img src={abhayanad_blog} alt="abhayanad_blog" />
         </div>
-        <div className=" mr-auto ml-12">
+        <div className="mr-auto ml-4 md:ml-12">
           {blogFeed.map((blog) => (
             <div key={blog.id} className="flex items-center my-6">
-              <img src={blog.image} alt={blog.title} className="md:w-20 md:h-20 w-10 h-10" />
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="md:w-20 md:h-20 w-10 h-10"
+              />
               <h1 className="text-sm ml-6 font-semibold">{blog.title}</h1>
             </div>
           ))}

@@ -24,8 +24,8 @@ function App() {
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <div
-        className={`transition-all duration-300 ease-in-out ${
-          isOpen ? "mt-16" : ""
+        className={`transition-all duration-300 ease-in-out md:mt-0 ${
+          isOpen ? "mt-72 md:mt-0" : ""
         }`}
       >
         <Hero />
